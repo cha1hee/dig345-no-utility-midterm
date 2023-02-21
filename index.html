@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="row" style="height: 40px;"></div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5" id="insta-pic">
+            </div>
+            <div class="col-1"></div>
+            <div class="col-4" id="questionnaire">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="username">What is the user's name?</label>
+                        <input type="text" class="form-control" id="username" placeholder="Type Here">
+                    </div>
+
+                    <label for="fname">What is the user's name?</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lpet">Does the user have any pets?</label>
+                    <input type="text" id="lpet" name="lpet"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="assets/main.js"></script>
+    </body>
+</html>

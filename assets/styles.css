@@ -1,0 +1,12 @@
+#insta-pic {
+    height: 600px;
+    border-style: solid;
+    border-radius: 10px;
+    overflow: scroll;
+    padding: 0%;
+}
+#questionnaire {
+    height: 600px;
+    border-style: solid;
+    border-radius: 10px;
+}
