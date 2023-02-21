@@ -9,4 +9,5 @@
     height: 600px;
     border-style: solid;
     border-radius: 10px;
+    overflow: scroll;
 }
