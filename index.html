@@ -19,8 +19,15 @@
                             <input type="text" class="form-control" id="username" placeholder="Type Here">
                         </div>
                         <div class="form-group">
-                            <label for="pets">Does the user have pets?</label>
-                            <input type="text" class="form-control" id="pets" placeholder="Type Here">
+                            <label for="pets">Does the user have pets? If so, how many?</label>
+                            <select class="form-control" id="pets">
+                                <option selected disabled>Please select</option>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>>3</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="occupation">What is the user's occupation?</label>
@@ -38,7 +45,6 @@
                         
                         <div class="row" style="height: 20px;"></div>
                         <button type="button" class="btn btn-primary" id="submit">Submit</button>
-                        <!-- <a class="btn btn-primary" href="story.html" role="button" id="submit">Submit</a> -->
                     </form>
                 </div>
             </div>

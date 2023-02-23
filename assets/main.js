@@ -1,10 +1,10 @@
-let instagram = ["assets/img/choiwoosik.PNG", "assets/img/patrickdempsey.PNG"];
+let instNoBio = ["assets/img/choiwoosik.PNG", "assets/img/patrickdempsey.PNG"];
 
 const random = Math.floor(Math.random() * 2)
 
 let inststr =""
 inststr += `
-<img src="${instagram[random]}" style = "width: 100%">
+<img src="${instNoBio[random]}" style = "width: 100%">
 `;
 
 $("#insta-pic").html(inststr);
@@ -12,13 +12,38 @@ $("#insta-pic").html(inststr);
 
 
 function sentences(){
-    var input = document.getElementById("username").value;
-    var sentence = `The user's name is ${input}.`
-    return sentence;
+    var sentences = "";
+    //user's name
+    var input1 = document.getElementById("username").value;
+    if(input1 === ""){sentences = ""; input1 = "User"}
+    else{sentences += `This user's name is ${input1}.`}
+
+    //pets
+    var input2 = document.getElementById("pets").value;
+    console.log(typeof input2)
+    if(input2 > 1){sentences+= `${input1} has ${input2} pets.`}
+    else if(input2 == 1){sentences+= `${input1} has 1 pet.`}
+    else if(input2 == 0){sentences+= `${input1} has no pets.`}
+    else if(input2 === ">3"){sentences+= `${input1} has more than 3 pets.`}
+    else{sentences = sentences}
+
+    //occupation
+
+    //age
+
+    //education
+
+
+
+    return sentences;
 }
 
 let submitBtn = document.querySelector("#submit");
 submitBtn.addEventListener('click', (e) =>{
+    //update left side (no bio pic -> bio pic)
+
+
+    //update right side (questions to sentences)
     let madeSent = sentences();
     document.getElementById("form-questions").remove()
     let sentenceStr = ""
