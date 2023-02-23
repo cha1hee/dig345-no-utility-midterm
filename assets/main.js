@@ -10,3 +10,20 @@ inststr += `
 $("#insta-pic").html(inststr);
 
 
+
+function sentences(){
+    var input = document.getElementById("username").value;
+    var sentence = `The user's name is ${input}.`
+    return sentence;
+}
+
+let submitBtn = document.querySelector("#submit");
+submitBtn.addEventListener('click', (e) =>{
+    let madeSent = sentences();
+    document.getElementById("form-questions").remove()
+    let sentenceStr = ""
+    sentenceStr += `
+    <p> ${madeSent}</p>
+    `
+    $("#in-out").html(sentenceStr)
+});
