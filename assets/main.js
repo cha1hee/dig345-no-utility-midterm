@@ -1,10 +1,23 @@
-let instNoBio = ["assets/img/choiwoosik.PNG", "assets/img/patrickdempsey.PNG"];
-
+let instNoBio = [
+    {user: "user1",
+    nobio: "assets/img/choiwoosik.PNG",
+    bio: ""},
+    {user: "user2",
+    nobio: "assets/img/patrickdempsey.PNG",
+    bio: ""}
+    // {user: "user3",
+    // nobio: "",
+    // bio: ""},
+    // {user: "user4",
+    // nobio: "",
+    // bio:""}
+];
+let instBio = [];
 const random = Math.floor(Math.random() * 2)
 
 let inststr =""
 inststr += `
-<img src="${instNoBio[random]}" style = "width: 100%">
+<img src="${instNoBio[random].nobio}" style = "width: 100%">
 `;
 
 $("#insta-pic").html(inststr);
@@ -41,7 +54,16 @@ function sentences(){
 let submitBtn = document.querySelector("#submit");
 submitBtn.addEventListener('click', (e) =>{
     //update left side (no bio pic -> bio pic)
+    document.getElementById("insta-pic").remove()
+    let inststr =""
+    inststr += `
+    <div id="insta-pic"> 
+        <img src="${instNoBio[random].nobio}" style = "width: 100%">
+    </div>
+    
+    `;
 
+    $("#insta-pic-holder").html(inststr);
 
     //update right side (questions to sentences)
     let madeSent = sentences();
