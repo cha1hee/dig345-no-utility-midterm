@@ -1,19 +1,19 @@
 let instNoBio = [
     {user: "user1",
-    pics: "assets/img/choiWooShik.PNG",
-    top: "assets/img/choiWooShikTop.PNG"},
+    pics: "assets/img/choiWooShik.png",
+    top: "assets/img/choiWooShikTop.png"},
     {user: "user2",
-    pics: "assets/img/patrickDempsey.PNG",
-    top: "assets/img/instaTopPatrick.PNG"},
+    pics: "assets/img/patrickDempsey.png",
+    top: "assets/img/instaTopPatrick.png"},
     {user: "user3",
-    pics: "assets/img/leeTaeHwan.PNG",
-    top: "assets/img/leeTaeHwanTop.PNG"},
+    pics: "assets/img/leeTaeHwan.png",
+    top: "assets/img/leeTaeHwanTop.png"},
     {user: "user4",
-    pics: "assets/img/jisoo.PNG",
-    top:"assets/img/jisooTop.PNG"},
+    pics: "assets/img/jisoo.png",
+    top:"assets/img/jisooTop.png"},
     {user: "user5",
-    pics: "assets/img/songJiHyo.PNG",
-    top:"assets/img/songJiHyoTop.PNG"}
+    pics: "assets/img/songJiHyo.png",
+    top:"assets/img/songJiHyoTop.png"}
 ];
 let instBio = [];
 const random = Math.floor(Math.random() * instNoBio.length)
