@@ -1,76 +1,55 @@
 let instNoBio = [
     {user: "user1",
-    nobio: "assets/img/choiwoosik.PNG",
-    bio: ""},
+    pics: "assets/img/choiWooShik.PNG",
+    top: "assets/img/choiWooShikTop.PNG"},
     {user: "user2",
-    nobio: "assets/img/patrickdempsey.PNG",
-    bio: ""}
-    // {user: "user3",
-    // nobio: "",
-    // bio: ""},
-    // {user: "user4",
-    // nobio: "",
-    // bio:""}
+    pics: "assets/img/patrickDempsey.PNG",
+    top: "assets/img/instaTopPatrick.PNG"},
+    {user: "user3",
+    pics: "assets/img/leeTaeHwan.PNG",
+    top: "assets/img/leeTaeHwanTop.PNG"},
+    {user: "user4",
+    pics: "assets/img/jisoo.PNG",
+    top:"assets/img/jisooTop.PNG"},
+    {user: "user5",
+    pics: "assets/img/songJiHyo.PNG",
+    top:"assets/img/songJiHyoTop.PNG"}
 ];
 let instBio = [];
-const random = Math.floor(Math.random() * 2)
+const random = Math.floor(Math.random() * instNoBio.length)
 
 let inststr =""
 inststr += `
-<img src="${instNoBio[random].nobio}" style = "width: 100%">
+<img src="${instNoBio[random].pics}" style = "width: 100%">
 `;
 
-$("#insta-pic").html(inststr);
+let topstr =""
+topstr +=`
+<img src="${instNoBio[random].top}" style = "width: 100%">
+`
 
-
-
-function sentences(){
-    var sentences = "";
-    //user's name
-    var input1 = document.getElementById("username").value;
-    if(input1 === ""){sentences = ""; input1 = "User"}
-    else{sentences += `This user's name is ${input1}.`}
-
-    //pets
-    var input2 = document.getElementById("pets").value;
-    console.log(typeof input2)
-    if(input2 > 1){sentences+= `${input1} has ${input2} pets.`}
-    else if(input2 == 1){sentences+= `${input1} has 1 pet.`}
-    else if(input2 == 0){sentences+= `${input1} has no pets.`}
-    else if(input2 === ">3"){sentences+= `${input1} has more than 3 pets.`}
-    else{sentences = sentences}
-
-    //occupation
-
-    //age
-
-    //education
-
-
-
-    return sentences;
-}
-
-let submitBtn = document.querySelector("#submit");
-submitBtn.addEventListener('click', (e) =>{
-    //update left side (no bio pic -> bio pic)
-    document.getElementById("insta-pic").remove()
-    let inststr =""
-    inststr += `
-    <div id="insta-pic"> 
-        <img src="${instNoBio[random].nobio}" style = "width: 100%">
-    </div>
+//popup js
+$(function(){
+    var overlay = $('<div id="overlay"></div>');
+    overlay.show();
+    overlay.appendTo(document.body);
+    $('.popup').show();
+    $('.close').click(function(){
+    $('.popup').hide();
+    overlay.appendTo(document.body).remove();
+    return false;
+    });
     
-    `;
+    
+     
+    
+    $('.x').click(function(){
+    $('.popup').hide();
+    overlay.appendTo(document.body).remove();
+    return false;
+    });
+    });
 
-    $("#insta-pic-holder").html(inststr);
 
-    //update right side (questions to sentences)
-    let madeSent = sentences();
-    document.getElementById("form-questions").remove()
-    let sentenceStr = ""
-    sentenceStr += `
-    <p> ${madeSent}</p>
-    `
-    $("#in-out").html(sentenceStr)
-});
+$("#insta-pic").html(inststr);
+$("#insta-top").html(topstr);

@@ -1,0 +1,143 @@
+@media screen and (min-width: 992px){
+/* Popup container */
+.popup {
+    cursor: pointer;
+    color: white;
+    text-align: right;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popuptext {
+    visibility: hidden;
+    width: 80%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 1;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+
+
+
+    body{
+        background-color: black;
+    }
+    .container{
+        background-color: black;
+        overflow: hidden;
+    }
+    .backdrop{
+        background-color: white;
+    }
+    #in-out {
+        height: 600px;
+        border-style: solid;
+        border-radius: 10px;
+        overflow: scroll;
+        padding-top: 10px;
+        background-color: white;
+    }
+    #form-questions{
+        background-color: white;
+    }
+
+    .results-css{
+        font-size: 20px;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:991px) {
+
+
+    /* Popup container */
+.popup {
+    cursor: pointer;
+    color: white;
+    text-align: right;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popuptext {
+    visibility: hidden;
+    width: 80%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    z-index: 1;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+   
+body{
+    background-color: black;
+}
+.container{
+    background-color: black;
+    overflow: hidden;
+}
+.backdrop{
+    background-color: white;
+}
+#in-out {
+    height: 600px;
+    border-style: solid;
+    border-radius: 10px;
+    overflow: scroll;
+    padding-top: 10px;
+    background-color: white;
+}
+#form-questions{
+    background-color: white;
+}
+
+.results-css{
+    font-size: 20px;
+}
+}
