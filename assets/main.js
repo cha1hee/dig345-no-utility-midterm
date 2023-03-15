@@ -28,6 +28,21 @@ topstr +=`
 <img src="${instNoBio[random].top}" style = "width: 100%">
 `
 
+var totalTime
+//timer
+if(window.location.href === "https://dig345-no-utility-midterm.vercel.app/"){
+    document.addEventListener("DOMContentLoaded", () => {
+        const start = new Date().getTime();
+        window.addEventListener("beforeunload", () => {
+            const end = new Date().getTime();
+            totalTime = (end - start) / 1000
+        });
+    });
+}
+
+
+
+
 //popup js
 $(function(){
     var overlay = $('<div id="overlay"></div>');

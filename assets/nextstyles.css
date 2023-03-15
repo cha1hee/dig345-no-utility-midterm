@@ -42,15 +42,8 @@
 
 
 
-    body{
-        background-color: black;
-    }
     .container{
-        background-color: black;
         overflow: hidden;
-    }
-    .backdrop{
-        background-color: white;
     }
     #in-out {
         height: 600px;
@@ -58,12 +51,7 @@
         border-radius: 10px;
         overflow: scroll;
         padding-top: 10px;
-        background-color: white;
     }
-    #form-questions{
-        background-color: white;
-    }
-
     .results-css{
         font-size: 20px;
     }
@@ -114,16 +102,9 @@
     from {opacity: 0;}
     to {opacity:1 ;}
   }
-   
-body{
-    background-color: black;
-}
+
 .container{
-    background-color: black;
     overflow: hidden;
-}
-.backdrop{
-    background-color: white;
 }
 #in-out {
     height: 600px;
@@ -131,10 +112,6 @@ body{
     border-radius: 10px;
     overflow: scroll;
     padding-top: 10px;
-    background-color: white;
-}
-#form-questions{
-    background-color: white;
 }
 
 .results-css{
