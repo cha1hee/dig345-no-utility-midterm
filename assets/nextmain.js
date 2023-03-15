@@ -53,6 +53,6 @@ submitBtn.addEventListener('click', (e) =>{
     // `
     // $("#in-out").html(sentenceStr)
     let sentenceStr = `You've been looking at this user's page for ${totalTime} seconds`
-    $("#in-out").html()
+    $("#in-out").html(sentenceStr)
 });
 
