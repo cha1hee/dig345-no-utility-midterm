@@ -41,16 +41,6 @@ var totalTime
 // }
 
 
-// if(window.location.href === "file:///Users/paulichali/Desktop/Studies/Spring%202023/DIG345/dig-345-no-utility-midterm/index.html"){
-//     document.addEventListener("DOMContentLoaded", () => {
-//         const start = new Date().getTime();
-//         window.addEventListener("beforeunload", () => {
-//             const end = new Date().getTime();
-//             totalTime = (end - start) / 1000
-//             console.log(totalTime)
-//         });
-//     });
-// }
 
 
 

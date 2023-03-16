@@ -51,7 +51,8 @@ submitBtn.addEventListener('click', (e) =>{
     // <div> ${madeSent}</div>
     // `
     // $("#in-out").html(sentenceStr)
-    let sentenceStr = `You've been looking at this user's page for ${totalTime} seconds`
+    let sentenceStr = `(placeholder)<br><h1 style="text-align: center">Congrats!<h1> <h5>You've been looking at this user's page for at grand total of ${totalTime} seconds 
+    and have managed to analyze this person's personality. You could be a psychologist.</h5>`
     $("#in-out").html(sentenceStr)
 });
 
