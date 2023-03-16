@@ -9,14 +9,17 @@
         <div class="container gx-0" style="height: 100%;">
             <div class="row" style="height: 20px;"></div>
             <div class="row" style="height: 95%;">
-                <div class="col-lg-3 col-sm-2 col-1"></div>
-                <div class="col-lg-6 col-sm-8 col-10" id="in-out" style="height: 100%;">
+                <div class="col-lg-4 col-sm-2 col-1"></div>
+                <div class="col-lg-4 col-sm-8 col-10" id="in-out" style="height: 100%;">
                     <div id="form-questions">
+                        <h3>What do you remember?</h3>
                         <form action="/action_page.php">
                             <div class="form-group">
                                 <label for="username">What is the user's name?</label>
                                 <input type="text" class="form-control" id="username" placeholder="Type Here">
                             </div>
+
+                            <div class="row divider" style="height: 10px;"></div>
 
                             <div class="form-group">
                                 <label for="pets">How old is the user?</label>
@@ -28,14 +31,12 @@
                                     <option>60+</option>
                                 </select>
                             </div>
+                            
+                            <div class="row divider" style="height: 10px;"></div>
 
-                            <div class="form-group">
-                                <label for="occupation">Describe the user's vibe.</label>
-                                <input type="text" class="form-control" id="vibe" placeholder="Type Here">
-                            </div>
                             <b>Answer the following questions using a scale from 1-5, 1 being not at all and 5 being very much so.</b>
                             <div class="form-group">
-                                <label for="adventure">How adventurous is the user?</label><br>
+                                <label for="adventure">How extroverted is the user?</label><br>
                                 <select class="form-control" id="adventure">
                                     <option selected disabled>Please select</option>
                                     <option>1</option>
@@ -45,8 +46,11 @@
                                     <option>5</option>
                                 </select>
                             </div>
+
+                            <div class="row divider" style="height: 10px;"></div>
+
                             <div class="form-group">
-                                <label for="creativity">How creative is the user?</label><br>
+                                <label for="creativity">How trustworthy/kind is the user?</label><br>
                                 <select class="form-control" id="creativity">
                                     <option selected disabled>Please select</option>
                                     <option>1</option>
@@ -56,8 +60,11 @@
                                     <option>5</option>
                                 </select>
                             </div>
+
+                            <div class="row divider" style="height: 10px;"></div>
+                            
                             <div class="form-group">
-                                <label for="fitness">Is the user fit?</label><br>
+                                <label for="fitness">Is the user adventurous?</label><br>
                                 <select class="form-control" id="fitness">
                                     <option selected disabled>Please select</option>
                                     <option>1</option>
@@ -68,9 +75,10 @@
                                 </select>
                             </div>
 
+                            <div class="row divider" style="height: 10px;"></div>
 
                             <div class="form-group">
-                                <label for="shy">Is the user shy?</label><br>
+                                <label for="shy">Is the user thoughtful/kind?</label><br>
                                 <select class="form-control" id="shy">
                                     <option selected disabled>Please select</option>
                                     <option>1</option>
@@ -80,43 +88,12 @@
                                     <option>5</option>
                                 </select>
                             </div>
-                            <div class="form-group">
-                                <label for="kind">How kind is the user?</label><br>
-                                <select class="form-control" id="kind">
-                                    <option selected disabled>Please select</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="assertive">Is the user assertive?</label><br>
-                                <select class="form-control" id="assertive">
-                                    <option selected disabled>Please select</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="anxiety">Does the user seem to have much anxiety?</label><br>
-                                <select class="form-control" id="anxiety">
-                                    <option selected disabled>Please select</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
+
+                            <div class="row divider" style="height: 10px;"></div>
 
                             <div class="form-group">
-                                <label for="attractive">How attractive is the user?</label><br>
-                                <select class="form-control" id="attractive">
+                                <label for="shy">Is the user emotional?</label><br>
+                                <select class="form-control" id="shy">
                                     <option selected disabled>Please select</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -153,7 +130,7 @@
         </div>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="assets/main.js"></script>
+        <!-- <script src="assets/main.js"></script> -->
         <script src="assets/nextmain.js"></script>
     </body>
 </html>

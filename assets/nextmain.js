@@ -1,5 +1,4 @@
 
-
 //popup js
 function myPopup() {
     var popup = document.getElementById("myPopup");
@@ -56,3 +55,4 @@ submitBtn.addEventListener('click', (e) =>{
     $("#in-out").html(sentenceStr)
 });
 
+console.log(totalTime)
