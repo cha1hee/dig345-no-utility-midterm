@@ -52,7 +52,20 @@ submitBtn.addEventListener('click', (e) =>{
     // `
     // $("#in-out").html(sentenceStr)
     let sentenceStr = `(placeholder)<br><h1 style="text-align: center">Congrats!<h1> <h5>You've been looking at this user's page for at grand total of ${totalTime} seconds 
-    and have managed to analyze this person's personality. You could be a psychologist.</h5>`
+    and have managed to analyze this person's personality. You could be a psychologist.</h5>
+    
+    <div class="row">
+        <div class="col-4">
+            <div class="popup" onclick="myPopup()"> <button type="button" class="btn btn-primary" id="submit">About</button>
+                <span class="popuptext" id="myPopup">What assumptions have you made today? Every day we judge and assume truths about people. This 
+                    project exposes our subconsciousness making judgements on the character of a person just by an instagram post. Which often gives
+                    us the illusion that we know the person's life. We take the information given on social media at face value and believe that a 
+                    person's entire life is based off of these instant snap shots of a life. How exposing is social media really? What can you 
+                    really know from a person's feed? These are all questions that this project hopes to evoke to its visitors.
+                </span>
+            </div>
+        </div>
+    </div>`
     $("#in-out").html(sentenceStr)
 });
 
