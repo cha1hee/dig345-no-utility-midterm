@@ -51,11 +51,14 @@ submitBtn.addEventListener('click', (e) =>{
     // <div> ${madeSent}</div>
     // `
     // $("#in-out").html(sentenceStr)
-    let sentenceStr = `(placeholder)<br><h1 style="text-align: center">Congrats!<h1> <h5>You've been looking at this user's page for at grand total of ${totalTime} seconds 
-    and have managed to analyze this person's personality. You could be a psychologist.</h5>
+    let sentenceStr = `<div style = "text-align: center">(placeholder)<br><h1 style="text-align: center">Congrats!<h1> <h5>You've been looking at this user's 
+    page for a grand total of <br><p style="font-family: stick no bills; font-size: 100px;"> 64</p> seconds 
+    and have managed to analyze this person's personality. You could be a psychologist.</h5></div>
     
+    <div clas="row" style="height:30%"></div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-5"></div>
+        <div class="col-1">
             <div class="popup" onclick="myPopup()"> <button type="button" class="btn btn-primary" id="submit">About</button>
                 <span class="popuptext" id="myPopup">What assumptions have you made today? Every day we judge and assume truths about people. This 
                     project exposes our subconsciousness making judgements on the character of a person just by an instagram post. Which often gives
