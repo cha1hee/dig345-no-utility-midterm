@@ -94,3 +94,9 @@ $(document).on('click', '#submitR', function(){
     });
 
 });
+
+$(document).on('click', '#about', function(){
+    $("#main").load('views/about.html',function(){
+
+    });
+});
